@@ -49,11 +49,11 @@ class Item {
 
 public class SILab2 {
     public static boolean checkCart(List<Item> allItems, int payment){//1
-        if (allItems == null){//(2) //1
+        if (allItems == null){//1
             throw new RuntimeException("allItems list can't be null!");//2
         }
 
-        float sum = 0;//(4) //3
+        float sum = 0;//3
 
         for (int i = 0; i < allItems.size(); i++){//4   4.1  4.2  4.3
             Item item = allItems.get(i);//5
